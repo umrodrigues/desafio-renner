@@ -1,0 +1,431 @@
+2022-12-29 08:00:27.484  INFO 10156 --- [main] u.clientes.ClientesApplication           : Starting ClientesApplication using Java 11.0.17 on DATUM-NBB0339 with PID 10156 (C:\Users\colaboradordatum\Desktop\Desafio\autorizar-venda\target\classes started by colaboradordatum in C:\Users\colaboradordatum\Desktop\Desafio\autorizar-venda)
+2022-12-29 08:00:27.494  INFO 10156 --- [main] u.clientes.ClientesApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-12-29 08:00:28.871  INFO 10156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-29 08:00:29.101  INFO 10156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 217 ms. Found 3 JPA repository interfaces.
+2022-12-29 08:00:29.469  INFO 10156 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=56c770b5-5357-31f2-bd21-7c20f32f0a4d
+2022-12-29 08:00:30.500  INFO 10156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-12-29 08:00:30.516  INFO 10156 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-29 08:00:30.517  INFO 10156 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-12-29 08:00:30.830  INFO 10156 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-29 08:00:30.831  INFO 10156 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3236 ms
+2022-12-29 08:00:30.944  INFO 10156 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-29 08:00:31.342  INFO 10156 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-29 08:00:31.361  INFO 10156 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
+2022-12-29 08:00:31.641  INFO 10156 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-29 08:00:31.751  INFO 10156 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-12-29 08:00:32.089  INFO 10156 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-29 08:00:32.284  INFO 10156 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-12-29 08:00:33.243  INFO 10156 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-29 08:00:33.251  INFO 10156 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-29 08:00:34.030  WARN 10156 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-29 08:00:40.293  INFO 10156 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-12-29 08:00:41.663  WARN 10156 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-12-29 08:00:41.922  INFO 10156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 64414 (http) with context path ''
+2022-12-29 08:00:41.924  INFO 10156 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 64414
+2022-12-29 08:00:41.933  INFO 10156 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-12-29 08:00:42.123  INFO 10156 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-12-29 08:00:42.137  INFO 10156 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-12-29 08:00:42.186  INFO 10156 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-12-29 08:00:42.187  INFO 10156 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-12-29 08:00:42.187  INFO 10156 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-12-29 08:00:42.187  INFO 10156 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-12-29 08:00:42.187  INFO 10156 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-12-29 08:00:42.187  INFO 10156 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-12-29 08:00:42.188  INFO 10156 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-12-29 08:00:43.111  INFO 10156 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-12-29 08:00:43.117  INFO 10156 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-12-29 08:00:43.125  INFO 10156 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-12-29 08:00:43.139  INFO 10156 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1672311643136 with initial instances count: 0
+2022-12-29 08:00:43.144  INFO 10156 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTORIZACAO-VENDA with eureka with status UP
+2022-12-29 08:00:43.145  INFO 10156 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672311643145, current=UP, previous=STARTING]
+2022-12-29 08:00:43.149  INFO 10156 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTORIZACAO-VENDA/autorizacao-venda:c4cfec1e753ff3229819ec1622aa9f2d: registering service...
+2022-12-29 08:00:43.404  INFO 10156 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTORIZACAO-VENDA/autorizacao-venda:c4cfec1e753ff3229819ec1622aa9f2d - registration status: 204
+2022-12-29 08:00:43.998  INFO 10156 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:00:44.014  INFO 10156 --- [main] o.s.a.r.l.SimpleMessageListenerContainer : Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:00:44.031  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:00:44.056  INFO 10156 --- [main] u.clientes.ClientesApplication           : Started ClientesApplication in 17.672 seconds (JVM running for 21.257)
+2022-12-29 08:00:49.113  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:00:49.115  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@f53db1a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:00:49.118  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:00:54.217  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:00:54.217  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@527047dc: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:00:54.218  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:00:59.326  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:00:59.326  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@e608b8f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:00:59.327  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:01:04.424  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:01:04.424  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6a1d590e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:01:04.425  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:01:09.519  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:01:09.519  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3d291594: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:01:09.520  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:01:13.125  INFO 10156 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-12-29 08:01:13.126  INFO 10156 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-12-29 08:01:13.126  INFO 10156 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-12-29 08:01:13.126  INFO 10156 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-12-29 08:01:13.126  INFO 10156 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-12-29 08:01:13.126  INFO 10156 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-12-29 08:01:13.127  INFO 10156 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-12-29 08:01:13.148  INFO 10156 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-12-29 08:01:14.599  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:01:14.599  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@24a5d891: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:01:14.599  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-7] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:01:19.711  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-7] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:01:19.711  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-7] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@31714d6f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:01:19.714  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:01:24.831  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:01:24.831  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@f037b30: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:01:24.832  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-9] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:01:30.028  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-9] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:01:30.029  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-9] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@75e078d0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:01:30.030  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-10] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:01:35.106  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-10] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:01:35.106  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-10] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2c85bcd5: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:01:35.107  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-11] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:01:40.260  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-11] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:01:40.261  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-11] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6cd8912c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:01:40.263  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-12] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:01:45.407  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-12] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:01:45.407  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-12] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4fd65ea2: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:01:45.408  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-13] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:01:50.495  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-13] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:01:50.495  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-13] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1d309da7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:01:50.496  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-14] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:01:55.560  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-14] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:01:55.560  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-14] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5d7081a6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:01:55.561  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-15] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:02:00.644  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-15] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:02:00.644  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-15] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2d0d5e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:02:00.645  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-16] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:02:05.758  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-16] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:02:05.759  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-16] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@71add79: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:02:05.761  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-17] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:02:10.858  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-17] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:02:10.859  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-17] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6743a1f9: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:02:10.860  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-18] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:02:15.951  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-18] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:02:15.951  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-18] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@71e7b544: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:02:15.953  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-19] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:02:21.069  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-19] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:02:21.070  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-19] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6899296c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:02:21.071  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-20] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:02:26.153  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-20] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:02:26.153  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-20] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@18bf9318: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:02:26.155  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-21] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:02:31.229  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-21] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:02:31.229  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-21] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@574aa420: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:02:31.230  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-22] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:02:36.333  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-22] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:02:36.333  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-22] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@8bd0696: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:02:36.334  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-23] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:02:41.425  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-23] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:02:41.425  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-23] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2f05b8e7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:02:41.427  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-24] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:02:46.532  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-24] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:02:46.532  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-24] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1c4b3d04: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:02:46.534  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-25] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:02:51.635  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-25] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:02:51.635  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-25] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3f2c2327: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:02:51.637  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-26] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:02:56.721  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-26] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:02:56.721  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-26] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@33b00965: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:02:56.721  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-27] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:03:01.811  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-27] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:03:01.812  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-27] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6adeb3bd: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:03:01.813  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-28] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:03:06.913  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-28] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:03:06.914  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-28] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3844a85: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:03:06.915  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-29] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:03:12.014  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-29] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:03:12.015  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-29] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5b4bb0c3: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:03:12.015  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-30] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:03:17.111  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-30] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:03:17.111  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-30] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7872a2e5: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:03:17.113  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-31] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:03:22.215  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-31] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:03:22.216  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-31] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@54b2d52e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:03:22.217  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-32] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:03:27.320  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-32] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:03:27.320  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-32] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@220a5c6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:03:27.321  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-33] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:03:32.408  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-33] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:03:32.408  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-33] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@106bde5e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:03:32.409  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-34] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:03:37.495  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-34] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:03:37.495  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-34] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@391941dc: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:03:37.495  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-35] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:03:42.598  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-35] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:03:42.598  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-35] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@f69f49: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:03:42.599  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-36] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:03:47.680  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-36] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:03:47.680  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-36] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@8fa65d8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:03:47.682  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-37] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:03:52.771  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-37] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:03:52.772  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-37] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@194ca98e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:03:52.773  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-38] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:03:57.870  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-38] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:03:57.871  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-38] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@129c53d0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:03:57.872  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-39] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:04:02.985  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-39] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:04:02.985  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-39] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4c351598: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:04:02.986  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-40] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:04:08.095  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-40] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:04:08.095  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-40] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@37165897: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:04:08.097  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-41] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:04:13.188  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-41] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:04:13.188  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-41] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@524790d7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:04:13.189  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-42] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:04:18.274  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-42] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:04:18.274  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-42] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@427ddcff: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:04:18.275  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-43] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:04:23.374  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-43] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:04:23.374  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-43] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2afee845: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:04:23.375  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-44] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:04:28.446  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-44] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:04:28.446  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-44] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@41f46182: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:04:28.447  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-45] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:04:33.550  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-45] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:04:33.550  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-45] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@71beea9c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:04:33.550  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-46] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:04:38.663  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-46] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:04:38.663  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-46] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2185a696: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:04:38.664  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-47] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:04:43.774  WARN 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-47] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2022-12-29 08:04:43.774  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-47] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@734dccd3: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:04:43.775  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-48] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:04:48.924  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-48] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7cdb3cbb: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-12-29 08:04:48.926  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-49] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-12-29 08:04:48.981  INFO 10156 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-49] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#578781f7:49/SimpleConnection@3876f75f [delegate=amqp://guest@127.0.0.1:5672/, localPort= 64909]
+2022-12-29 08:05:42.206  INFO 10156 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-12-29 08:10:42.218  INFO 10156 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-12-29 08:15:42.227  INFO 10156 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-12-29 08:20:42.230  INFO 10156 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-12-29 08:21:27.845  INFO 10156 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application AUTORIZACAO-VENDA with eureka with status DOWN
+2022-12-29 08:21:27.847  INFO 10156 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672312887847, current=DOWN, previous=UP]
+2022-12-29 08:21:27.847  INFO 10156 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTORIZACAO-VENDA/autorizacao-venda:c4cfec1e753ff3229819ec1622aa9f2d: registering service...
+2022-12-29 08:21:27.853  INFO 10156 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-12-29 08:21:27.858  INFO 10156 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTORIZACAO-VENDA/autorizacao-venda:c4cfec1e753ff3229819ec1622aa9f2d - registration status: 204
+2022-12-29 08:21:28.078  INFO 10156 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-12-29 08:21:28.411  INFO 10156 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-29 08:21:28.412  INFO 10156 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-29 08:21:28.425  INFO 10156 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-29 08:21:28.430  INFO 10156 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-29 08:21:28.431  INFO 10156 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-12-29 08:21:31.447  INFO 10156 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-12-29 08:21:31.465  INFO 10156 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTORIZACAO-VENDA/autorizacao-venda:c4cfec1e753ff3229819ec1622aa9f2d - deregister  status: 200
+2022-12-29 08:21:31.470  INFO 10156 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-12-29 08:21:50.163  INFO 19148 --- [main] u.clientes.ClientesApplication           : Starting ClientesApplication using Java 11.0.17 on DATUM-NBB0339 with PID 19148 (C:\Users\colaboradordatum\Desktop\Desafio\autorizar-venda\target\classes started by colaboradordatum in C:\Users\colaboradordatum\Desktop\Desafio\autorizar-venda)
+2022-12-29 08:21:50.165  INFO 19148 --- [main] u.clientes.ClientesApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-12-29 08:21:51.139  INFO 19148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-29 08:21:51.316  INFO 19148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 168 ms. Found 3 JPA repository interfaces.
+2022-12-29 08:21:51.590  INFO 19148 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e2fc0747-0e54-3dad-936a-800ad381febb
+2022-12-29 08:21:52.312  INFO 19148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-12-29 08:21:52.328  INFO 19148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-29 08:21:52.328  INFO 19148 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-12-29 08:21:52.516  INFO 19148 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-29 08:21:52.516  INFO 19148 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2293 ms
+2022-12-29 08:21:52.580  INFO 19148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-29 08:21:52.838  INFO 19148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-29 08:21:52.851  INFO 19148 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
+2022-12-29 08:21:53.043  INFO 19148 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-29 08:21:53.122  INFO 19148 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-12-29 08:21:53.318  INFO 19148 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-29 08:21:53.471  INFO 19148 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-12-29 08:21:54.235  INFO 19148 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-29 08:21:54.243  INFO 19148 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-29 08:21:54.508  WARN 19148 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'solicitacaoEfetivarPublisher' defined in file [C:\Users\colaboradordatum\Desktop\Desafio\autorizar-venda\target\classes\umrodrigues\clientes\infra\mqeue\solicitacaoEfetivarPublisher.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.amqp.core.Queue' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-12-29 08:21:54.514  INFO 19148 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-29 08:21:54.514  INFO 19148 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-29 08:21:54.523  INFO 19148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-29 08:21:54.527  INFO 19148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-29 08:21:54.528  INFO 19148 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-29 08:21:54.542  INFO 19148 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-29 08:21:54.564 ERROR 19148 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in umrodrigues.clientes.infra.mqeue.solicitacaoEfetivarPublisher required a bean of type 'org.springframework.amqp.core.Queue' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.amqp.core.Queue' in your configuration.
+
+2022-12-29 08:23:12.007  INFO 5828 --- [main] u.clientes.ClientesApplication           : Starting ClientesApplication using Java 11.0.17 on DATUM-NBB0339 with PID 5828 (C:\Users\colaboradordatum\Desktop\Desafio\autorizar-venda\target\classes started by colaboradordatum in C:\Users\colaboradordatum\Desktop\Desafio\autorizar-venda)
+2022-12-29 08:23:12.010  INFO 5828 --- [main] u.clientes.ClientesApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-12-29 08:23:13.019  INFO 5828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-29 08:23:13.269  INFO 5828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 241 ms. Found 3 JPA repository interfaces.
+2022-12-29 08:23:13.624  INFO 5828 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e2fc0747-0e54-3dad-936a-800ad381febb
+2022-12-29 08:23:14.341  INFO 5828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-12-29 08:23:14.352  INFO 5828 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-29 08:23:14.353  INFO 5828 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-12-29 08:23:14.514  INFO 5828 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-29 08:23:14.514  INFO 5828 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2457 ms
+2022-12-29 08:23:14.556  INFO 5828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-29 08:23:14.755  INFO 5828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-29 08:23:14.770  INFO 5828 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
+2022-12-29 08:23:14.923  INFO 5828 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-29 08:23:14.973  INFO 5828 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-12-29 08:23:15.125  INFO 5828 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-29 08:23:15.241  INFO 5828 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-12-29 08:23:15.878  INFO 5828 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-29 08:23:15.886  INFO 5828 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-29 08:23:16.098  WARN 5828 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'solicitacaoEfetivarPublisher' defined in file [C:\Users\colaboradordatum\Desktop\Desafio\autorizar-venda\target\classes\umrodrigues\clientes\infra\mqeue\solicitacaoEfetivarPublisher.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.amqp.core.Queue' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-12-29 08:23:16.105  INFO 5828 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-29 08:23:16.105  INFO 5828 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-29 08:23:16.113  INFO 5828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-29 08:23:16.118  INFO 5828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-29 08:23:16.121  INFO 5828 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-29 08:23:16.135  INFO 5828 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-29 08:23:16.160 ERROR 5828 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in umrodrigues.clientes.infra.mqeue.solicitacaoEfetivarPublisher required a bean of type 'org.springframework.amqp.core.Queue' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.amqp.core.Queue' in your configuration.
+
+2022-12-29 08:28:22.115  INFO 524 --- [main] u.clientes.ClientesApplication           : Starting ClientesApplication using Java 11.0.17 on DATUM-NBB0339 with PID 524 (C:\Users\colaboradordatum\Desktop\Desafio\autorizar-venda\target\classes started by colaboradordatum in C:\Users\colaboradordatum\Desktop\Desafio\autorizar-venda)
+2022-12-29 08:28:22.119  INFO 524 --- [main] u.clientes.ClientesApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-12-29 08:28:23.056  INFO 524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-29 08:28:23.236  INFO 524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 170 ms. Found 3 JPA repository interfaces.
+2022-12-29 08:28:23.466  INFO 524 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e2fc0747-0e54-3dad-936a-800ad381febb
+2022-12-29 08:28:24.106  INFO 524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-12-29 08:28:24.116  INFO 524 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-29 08:28:24.116  INFO 524 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-12-29 08:28:24.265  INFO 524 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-29 08:28:24.266  INFO 524 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2099 ms
+2022-12-29 08:28:24.305  INFO 524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-29 08:28:24.502  INFO 524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-29 08:28:24.516  INFO 524 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
+2022-12-29 08:28:24.657  INFO 524 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-29 08:28:24.718  INFO 524 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-12-29 08:28:24.854  INFO 524 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-29 08:28:24.971  INFO 524 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-12-29 08:28:25.586  INFO 524 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-29 08:28:25.592  INFO 524 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-29 08:28:25.796  WARN 524 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'solicitacaoEfetivarPublisher' defined in file [C:\Users\colaboradordatum\Desktop\Desafio\autorizar-venda\target\classes\umrodrigues\clientes\infra\mqeue\solicitacaoEfetivarPublisher.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.amqp.core.Queue' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-12-29 08:28:25.801  INFO 524 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-29 08:28:25.802  INFO 524 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-29 08:28:25.809  INFO 524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-29 08:28:25.813  INFO 524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-29 08:28:25.815  INFO 524 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-29 08:28:25.830  INFO 524 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-29 08:28:25.852 ERROR 524 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in umrodrigues.clientes.infra.mqeue.solicitacaoEfetivarPublisher required a bean of type 'org.springframework.amqp.core.Queue' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.amqp.core.Queue' in your configuration.
+
+2022-12-29 08:32:02.109  INFO 24000 --- [main] u.clientes.ClientesApplication           : Starting ClientesApplication using Java 11.0.17 on DATUM-NBB0339 with PID 24000 (C:\Users\colaboradordatum\Desktop\Desafio\autorizar-venda\target\classes started by colaboradordatum in C:\Users\colaboradordatum\Desktop\Desafio\autorizar-venda)
+2022-12-29 08:32:02.113  INFO 24000 --- [main] u.clientes.ClientesApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-12-29 08:32:02.991  INFO 24000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-29 08:32:03.165  INFO 24000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 162 ms. Found 3 JPA repository interfaces.
+2022-12-29 08:32:03.399  INFO 24000 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e2fc0747-0e54-3dad-936a-800ad381febb
+2022-12-29 08:32:04.063  INFO 24000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-12-29 08:32:04.078  INFO 24000 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-29 08:32:04.078  INFO 24000 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-12-29 08:32:04.232  INFO 24000 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-29 08:32:04.232  INFO 24000 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2068 ms
+2022-12-29 08:32:04.268  INFO 24000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-29 08:32:04.476  INFO 24000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-29 08:32:04.489  INFO 24000 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
+2022-12-29 08:32:04.651  INFO 24000 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-29 08:32:04.708  INFO 24000 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-12-29 08:32:04.857  INFO 24000 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-29 08:32:04.989  INFO 24000 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-12-29 08:32:05.588  INFO 24000 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-29 08:32:05.594  INFO 24000 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-29 08:32:05.800  WARN 24000 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'solicitacaoEfetivarPublisher' defined in file [C:\Users\colaboradordatum\Desktop\Desafio\autorizar-venda\target\classes\umrodrigues\clientes\infra\mqeue\solicitacaoEfetivarPublisher.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.amqp.core.Queue' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-12-29 08:32:05.805  INFO 24000 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-29 08:32:05.806  INFO 24000 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-29 08:32:05.813  INFO 24000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-29 08:32:05.819  INFO 24000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-29 08:32:05.821  INFO 24000 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-29 08:32:05.835  INFO 24000 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-29 08:32:05.855 ERROR 24000 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in umrodrigues.clientes.infra.mqeue.solicitacaoEfetivarPublisher required a bean of type 'org.springframework.amqp.core.Queue' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.amqp.core.Queue' in your configuration.
+
+2022-12-29 08:35:35.617  INFO 25100 --- [main] u.clientes.ClientesApplication           : Starting ClientesApplication using Java 11.0.17 on DATUM-NBB0339 with PID 25100 (C:\Users\colaboradordatum\Desktop\Desafio\autorizar-venda\target\classes started by colaboradordatum in C:\Users\colaboradordatum\Desktop\Desafio\autorizar-venda)
+2022-12-29 08:35:35.620  INFO 25100 --- [main] u.clientes.ClientesApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-12-29 08:35:36.472  INFO 25100 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-29 08:35:36.649  INFO 25100 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 169 ms. Found 3 JPA repository interfaces.
+2022-12-29 08:35:36.922  INFO 25100 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e2fc0747-0e54-3dad-936a-800ad381febb
+2022-12-29 08:35:37.666  INFO 25100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-12-29 08:35:37.678  INFO 25100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-29 08:35:37.678  INFO 25100 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-12-29 08:35:37.828  INFO 25100 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-29 08:35:37.829  INFO 25100 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2156 ms
+2022-12-29 08:35:37.864  INFO 25100 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-29 08:35:38.065  INFO 25100 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-29 08:35:38.078  INFO 25100 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db'
+2022-12-29 08:35:38.241  INFO 25100 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-29 08:35:38.304  INFO 25100 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-12-29 08:35:38.463  INFO 25100 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-29 08:35:38.587  INFO 25100 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-12-29 08:35:39.226  INFO 25100 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-29 08:35:39.232  INFO 25100 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-29 08:35:39.436  WARN 25100 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'solicitacaoEfetivarPublisher' defined in file [C:\Users\colaboradordatum\Desktop\Desafio\autorizar-venda\target\classes\umrodrigues\clientes\infra\mqeue\solicitacaoEfetivarPublisher.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.amqp.core.Queue' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-12-29 08:35:39.441  INFO 25100 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-29 08:35:39.442  INFO 25100 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-29 08:35:39.449  INFO 25100 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-29 08:35:39.454  INFO 25100 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-29 08:35:39.456  INFO 25100 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-29 08:35:39.470  INFO 25100 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-29 08:35:39.491 ERROR 25100 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in umrodrigues.clientes.infra.mqeue.solicitacaoEfetivarPublisher required a bean of type 'org.springframework.amqp.core.Queue' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.amqp.core.Queue' in your configuration.
+
